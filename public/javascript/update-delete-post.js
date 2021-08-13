@@ -30,7 +30,7 @@ async function deleteFormHandler(event) {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
-
+    console.log('idsss2', id);
     const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE'
     });
@@ -43,5 +43,5 @@ async function deleteFormHandler(event) {
     }
 }
 
-document.querySelector('#update-btn').addEventListener('click', editFormHandler);
-document.querySelector('#delete-btn').addEventListener('click', deleteFormHandler);
+document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+document.querySelector('.delete-btn').addEventListener('click', deleteFormHandler);

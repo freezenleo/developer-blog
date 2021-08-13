@@ -5,14 +5,17 @@
 
     <form class="edit-post-form">
         <div>
+            <h3>Title</h3>
             <input name="post-title" type="text" value="{{post.title}}" />
         </div>
         <div>
+            <h3>Content</h3>
             <input name="post-content" type="text" value="{{post.content}}" />
         </div>
-        <button type="click" class="update-btn">Update</button>
-        <button type="click" class="delete-btn">Delete</button>
+        <button type="submit">Update</button>
     </form>
+
+    <button type="button" class="delete-btn">Delete</button>
 </section>
 
-<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/update-delete-post.js"></script>

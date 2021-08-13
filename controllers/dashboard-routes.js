@@ -71,8 +71,4 @@ router.get('/create-post', (req, res) => {
     res.render('add-post');
 })
 
-router.get('/edit-post', (req, res) => {
-    res.render('edit-post');
-})
-
 module.exports = router;
