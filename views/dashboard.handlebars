@@ -8,19 +8,20 @@
         <h3>Your Posts</h3>
         <ul class="post-list">
             {{#each posts as |post|}}
-            <li><a href="/dashboard/edit/{{post.id}}" class="edit-link">
-                    < {{!-- {{> post-info post}} --}}
-                        <article class="post">
-                            <div class="title">
-                                <h2>{{title}}</h2>
-                                <span>{{format_date created_at}}</span>
-                            </div>
-                        </article>
+            <li>
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">
+                    {{!-- {{> post-info post}} --}}
+                    <article class="post">
+                        <div class="title">
+                            <h2>{{title}}</h2>
+                            <span>{{format_date created_at}}</span>
+                        </div>
+                    </article>
                 </a>
             </li>
             {{/each}}
         </ul>
     </div>
     {{/if}}
-    <button type="click" class="btn"><a href="/dashboard/create-post">+ New Post</a></button>
+    <button type="click" class="btn-new-post"><a href="/dashboard/create-post">+ New Post</a></button>
 </section>

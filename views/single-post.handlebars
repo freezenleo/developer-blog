@@ -2,7 +2,15 @@
     <h1>The Tech Blog</h1>
 </div>
 
-{{> post-info post}}
+<article class="post">
+    <div class="title">
+        <h2>{{post.title}}</h2>
+        <h4>Posted by {{post.user.username}} on {{format_date post.created_at}}</h4>
+    </div>
+    <p>{{post.content}}</p>
+</article>
+
+{{> comments post.comments}}
 
 {{#if loggedIn}}
 <form class="comment-form">
@@ -11,9 +19,13 @@
     </div>
 
     <div>
-        <button type="submit">add comment</button>
+        <button type="submit" class="add-comment-btn">add comment</button>
     </div>
 </form>
 {{/if}}
 
-{{> comments post.comments}}
+
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

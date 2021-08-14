@@ -7,7 +7,8 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: rgba(35,16,16,255)
+;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: gray;
   border: 0;
   padding: 1%;
   color: white;
@@ -42,6 +43,7 @@ textarea, input {
   padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
+  width: 60%;
 }
 
 textarea:focus, input:focus {
@@ -96,6 +98,32 @@ header nav a:hover {
     text-shadow: none;
 }
 
+.login-form, .sign-up-form, .new-post-form, .edit-post-form{
+  border: 3px solid black;
+  margin: 20px;
+}
+
+.login-form h3, .sign-up-form h3, .new-post-form h3, .edit-post-form h3  {
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.login-form div, .sign-up-form div, .new-post-form div, .edit-post-form div {
+  margin: 10px;
+}
+
+.login-form input, .sign-up-form input, .new-post-form input, .edit-post-form input {
+  width: 100%;
+  text-align: left;
+}
+
+.login-form a, .sign-up-form a{
+  color: rgb(36, 65, 231);
+}
+
 main {
   flex: 1;
   background-color: rgb(217, 234, 211, 255);
@@ -106,13 +134,14 @@ main {
     
 }
 .page-heading h1{
-    background-color: rgb(160, 160, 160);
+    background-color: #d9ead3;
     display: inline-block;
     width: 40%;
     border: 1px solid #000;
     text-align: center;
     border-radius: 15px;
     margin: 50px;
+    box-shadow: 10px 10px 10px 5px #d9ead3;
 }
 
 .btn-no-style {
@@ -121,9 +150,9 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+
   font-size: 100%;
-  font-weight: bold;
+
   transition: color .1s;
   margin-left: 16px;
 }
@@ -131,6 +160,12 @@ main {
 .btn-no-style:hover {
   background: none;
   color: #3486eb;
+}
+
+.btn-new-post {
+  width: 10%;  
+  position: absolute;
+  left: 45%;
 }
 
 .delete-post-btn {
@@ -185,10 +220,31 @@ main {
   opacity: .6;
 }
 
+.add-comment-btn{
+  width: 60%;  
+  position: absolute;
+  left: 20%;
+}
+
 .new-post-form input {
   width: 300px;
 }
 
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.new-post-form input, .edit-post-form input {
+  width: 100%;
+  text-align: left;
+}
+
+.new-post-form .content-post input, .edit-post-form .content-post input{
+  line-height: 100px;
+}
+
+.edit-post-form div button{
+  position: relative;
+  width: 60%;
+  left: 20%;
 }

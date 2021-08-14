@@ -8,14 +8,17 @@
             <h3>Title</h3>
             <input name="post-title" type="text" value="{{post.title}}" />
         </div>
-        <div>
+        <div class="content-post">
             <h3>Content</h3>
             <input name="post-content" type="text" value="{{post.content}}" />
         </div>
-        <button type="submit">Update</button>
+        <div>
+            <button type="submit">Update</button>
+        </div>
+        <div>
+            <button type="button" class="delete-btn">Delete</button>
+        </div>
     </form>
-
-    <button type="button" class="delete-btn">Delete</button>
 </section>
 
 <script src="/javascript/update-delete-post.js"></script>
