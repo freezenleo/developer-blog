@@ -5,7 +5,7 @@ Developer blog is one of the expert discussion blog for coding. Developers can d
 </br></br>
 ![image](https://user-images.githubusercontent.com/81452611/129459593-a9e787b8-b229-45c3-ae52-c97da6272b01.png)
 
-Heroku Deployed URL:
+Heroku Deployed URL: https://powerful-anchorage-94267.herokuapp.com/
 
 </br>
 
