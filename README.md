@@ -9,4 +9,4 @@ Heroku Deployed URL: https://powerful-anchorage-94267.herokuapp.com/
 
 </br>
 
-Repo URL: git@github.com:freezenleo/developer-blog.git
+Repo URL: https://github.com/freezenleo/developer-blog
